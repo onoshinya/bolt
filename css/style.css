@@ -6,6 +6,10 @@ body {
   font-family: 'Raleway', serif;
 }
 
+main {
+  padding-top: 78px;
+}
+
 .contact ,
 .link--style {
   color: #fff;
@@ -52,11 +56,6 @@ body {
   padding: 15px 0 15px 15px;
   float: left;
   color: #4e4e4e;
-}
-
-.bolt::before {
-  font-family: "FontAwesome";
-  content: '\f0e7';
 }
 
 .list__icon {
@@ -140,13 +139,17 @@ body {
 }
 
 .title__box {
-  padding: 312px 0 250px;
+  padding: 250px 0 250px;
 }
 
 .bolt__title {
   font-size: 90px;
   font-weight: 700;
   color: #74cfae;
+}
+
+.bolt__title br {
+  display: none;
 }
 
 .bolt__subtitle {
@@ -173,6 +176,7 @@ body {
 .phone__txt {
   font-size: 20px;
   font-family: 'Lato', serif;
+  line-height: 24px;
 }
 
 .work__box {
@@ -198,12 +202,12 @@ body {
   cursor: pointer;
 }
 
-.work__img:nth-child(3) {
+.work__img:nth-child(3n) {
   margin-bottom: 80px;
 }
 
 .work__txtbox {
-  margin: 80px 15px 0;
+  margin: 0 15px;
   display: inline-block;
   vertical-align: middle;
 }
@@ -213,6 +217,7 @@ body {
   width: 100%;
   font-size: 20px;
   font-family: 'Lato', serif;
+  line-height: 24px;
 }
 
 .email {
@@ -280,33 +285,11 @@ body {
   background: #fff;
 }
 
-.facebook::before {
-  font-family: "FontAwesome";
-  content: '\f09a';
-}
-.dribbble::before {
-  font-family: "FontAwesome";
-  content: '\f17d';
-}
-.twitter::before {
-  font-family: "FontAwesome";
-  content: '\f099';
-}
-.envelope::before {
-  font-family: "FontAwesome";
-  content: '\f0e0';
-}
-
 .footer__txt {
   margin-right: 15px;
   padding: 20px 0 25px 0;
   float: right;
   box-sizing: border-box;
-}
-
-.heart::before {
-  font-family: "FontAwesome";
-  content: '\f004';
 }
 
 @media screen and (min-width:1200px) {
@@ -346,8 +329,11 @@ body {
     display: inline-block;
   }
 
-  .work__imgbox .work__img:nth-child(1),
-  .work__imgbox .work__img:nth-child(4) {
+  .work__img:nth-child(3n) {
+    margin-bottom: 0;
+  }
+
+  .work__imgbox .work__img:nth-child(3n-2) {
     margin-left: 0;
   }
 
@@ -356,7 +342,7 @@ body {
   }
 
   .work__txtbox {
-    margin: 90px 0 0;
+    margin: 90px 15px 0;
   }
 
   .work__txt {
@@ -387,11 +373,15 @@ body {
 @media screen and (max-width:766px) {
 
   .title__box {
-    padding: 222px 0 130px;
+    padding: 160px 0 130px;
   }
 
   .bolt__title {
     font-size: 80px;
+  }
+
+  .bolt__title br {
+    display: inline;
   }
 
   .br::before {
