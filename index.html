@@ -30,8 +30,8 @@
   <main>
     <section class="wrap__bg is--gray">
       <div class="wrap__standard wrap__content">
-        <div class="title">
-          <p class="bolt__title">Bolt Theme</p>
+        <div class="title__box">
+          <h1 class="bolt__title">Bolt Theme</h1>
           <p class="bolt__subtitle txt--gray">FREE BOOTSTRAP THEMES</p>
         </div>
       </div>
@@ -41,54 +41,70 @@
         <div class="phone__box clearfix">
           <img alt="phone" src="./img/iphone.png" class="phone__img">
           <div class="phone__txtbox">
-            <p class="phone__title txt--white">WHAT WE CAN DO?</p>
+            <h2 class="phone__title txt--white">WHAT WE CAN DO?</h2>
             <p class="phone__txt txt--white">Lorem lpsum is simply dummy text of the printing and typesetting industry. Lorem lpsumhas been the industry's standard dummy text ever since the 1500s, when an unknown printer took agalley of type and scrambled it to make atype apecimen book.</p>
           </div>
         </div>
       </div>
     </section>
-    <section class="wrap__bg">
+    <section class="wrap__bg is--gray">
       <div class="wrap__standard wrap__content">
-        <p class="work__title font__txt">OUR LATEST WORK</p>
-        <div class="work__wrap">
-          <figure class="work__box">
-            <img alt="work01" src="./img/01.jpg" class="work__img">
-            <img alt="work02" src="./img/02.jpg" class="work__img">
-            <img alt="work03" src="./img/03.jpg" class="work__img">
-          </figure>
-          <figure class="work__box">
-            <img alt="work04" src="./img/04.jpg" class="work__img">
-            <img alt="work05" src="./img/05.jpg" class="work__img">
-            <img alt="work06" src="./img/06.jpg" class="work__img">
-          </figure>
-        </div>
-        <div class="work__txtbox clearfix">
-          <p class="work__txt txt--gray">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
-          <button type="button" class="Email">
-            <a href="#" class="link--style Email__link--style">Email Me!</a>
-          </button>
+        <div class="work__box">
+          <h2 class="work__title font__txt">OUR LATEST WORK</h2>
+          <div class="work__content">
+            <ul class="work__imgbox">
+              <li class="work__img">
+                <img alt="work01" src="./img/01.jpg">
+              </li>
+              <li class="work__img">
+                <img alt="work02" src="./img/02.jpg">
+              </li class="work__img">
+              <li class="work__img">
+                <img alt="work03" src="./img/03.jpg">
+              </li>
+            </ul>
+            <ul class="work__imgbox">
+              <li class="work__img">
+                <img alt="work04" src="./img/04.jpg">
+              </li class="work__img">
+              <li class="work__img">
+                <img alt="work05" src="./img/05.jpg">
+              </li>
+              <li class="work__img">
+                <img alt="work06" src="./img/06.jpg">
+              </li>
+            </ul>
+          </div>
+          <div class="work__txtbox clearfix">
+            <p class="work__txt txt--gray">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+            <button type="button" class="email">
+              <a href="#" class="link--style email__link--style">Email Me!</a>
+            </button>
+          </div>
         </div>
       </div>
     </section>
     <section class="wrap__bg is--darkgray">
       <div class="wrap__standard wrap__content">
-        <p class="skill__title txt--white">OUR SKILLS</p>
-        <div class="skill__wrap clearfix">
-          <div class="skill__box">
-            <img alt="javascript" src="./img/circle_01.png" class="skill__img">
-            <p class="txt--16px txt--white">JavaScript</p>
-          </div>
-          <div class="skill__box">
-            <img alt="bootstrap" src="./img/circle_02.png" class="skill__img">
-            <p class="txt--16px txt--white">Bootstrap</p>
-          </div>
-          <div class="skill__box">
-            <img alt="wordpress" src="./img/circle_03.png" class="skill__img">
-            <p class="txt--16px txt--white">WoradPress</p>
-          </div>
-          <div class="skill__box">
-            <img alt="photoshop" src="./img/circle_04.png" class="skill__img">
-            <p class="txt--16px txt--white">Photoshop</p>
+        <div class="skill__box">
+          <h2 class="skill__title txt--white">OUR SKILLS</h2>
+          <div class="skill__content clearfix">
+            <figure class="skill__item">
+              <img alt="javascript" src="./img/circle_01.png" class="skill__img">
+              <figcaption class="txt--16px txt--white">JavaScript</p>
+            </figure>
+            <figure class="skill__item">
+              <img alt="bootstrap" src="./img/circle_02.png" class="skill__img">
+              <figcaption class="txt--16px txt--white">Bootstrap</p>
+            </figure>
+            <figure class="skill__item">
+              <img alt="wordpress" src="./img/circle_03.png" class="skill__img">
+              <figcaption class="txt--16px txt--white">WoradPress</p>
+            </figure>
+            <figure class="skill__item">
+              <img alt="photoshop" src="./img/circle_04.png" class="skill__img">
+              <figcaption class="txt--16px txt--white">Photoshop</p>
+            </figure>
           </div>
         </div>
       </div>
@@ -114,10 +130,10 @@
   </main>
   <footer class="wrap__bg is--green">
     <div class="wrap__standard wrap__content clearfix">
-      <p class="footer__txt txt--white">Crafted with♥by BlackTie.co.</p>
+      <p class="footer__txt txt--white">Crafted with<i class="fas fa-heart"></i>by BlackTie.co.</p>
     </div>
   </footer>
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/script.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
