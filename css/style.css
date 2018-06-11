@@ -6,7 +6,7 @@ body {
   font-family: 'Raleway', serif;
 }
 
-main {
+.main {
   padding-top: 78px;
 }
 
@@ -139,7 +139,7 @@ main {
 }
 
 .title__box {
-  padding: 250px 0 250px;
+  padding: 250px 0;
 }
 
 .bolt__title {
@@ -148,7 +148,7 @@ main {
   color: #74cfae;
 }
 
-.bolt__title br {
+.break {
   display: none;
 }
 
@@ -380,7 +380,7 @@ main {
     font-size: 80px;
   }
 
-  .bolt__title br {
+  .break {
     display: inline;
   }
 
